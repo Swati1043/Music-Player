@@ -10,6 +10,7 @@ const mainContainer = document.getElementById("main-container");
 
 let isSidebarOpen = true;
 
+
 const playBtn = document.getElementById("play");
 const prevBtn = document.getElementById("play-prev");
 const nextBtn = document.getElementById("play-next");
@@ -204,13 +205,11 @@ sliderIconParent.addEventListener("click",()=>{
     if(isSidebarOpen){
         sidebar.classList.add("hidden");
         mainContainer.style.width="100vw";
-        sliderIconParent.style.right="4vw";
         sliderIconChild.className = "fa-solid fa-angle-left";
         isSidebarOpen=false;
     }else{
         sidebar.classList.remove("hidden");
         mainContainer.style.width="80vw";
-        sliderIconParent.style.right="24vw";
         sliderIconChild.className = "fa-solid fa-angle-right";
         isSidebarOpen=true;
     }
