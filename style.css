@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+#main-outer-box{
+    display:flex;
+    height:100vh;
+}
+
+#main-container{
+    width:80vw;
+    background:#F9F7F7;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    transition:0.4s;
+}
+
+#music-container{
+    width:22vw;
+    height:60vh;
+    background:#DBE2EF;
+    border-radius:20px;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    box-shadow:0 10px 25px rgba(63,114,175,0.4);
+}
+
+#music-container-img{
+    width:90%;
+    height:45%;
+    background:#3F72AF;
+    border-radius:15px;
+    background-size:cover;
+    background-position:center;
+    margin-bottom:50px;
+}
+
+#music-container-songName{
+    color:#112D4E;
+    font-size:20px;
+}
+
+#music-container-artistName{
+    color:#3F72AF;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+#input-range{
+    width:100%;
+    margin-bottom:15px;
+}
+
+#volume-container{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    width:100%;
+    margin-bottom:15px;
+}
+
+#volume-icon{
+    color:#112D4E;
+    font-size:18px;
+}
+
+#volume-range{
+    width:100%;
+}
+
+#playSong-btn-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+#play,
+#play-prev,
+#play-next{
+    background:#F9F7F7;
+    padding:10px;
+    border-radius:50%;
+    cursor:pointer;
+    transition:0.3s;
+    color:#112D4E;
+}
+
+#play:hover,
+#play-prev:hover,
+#play-next:hover{
+    background:#3F72AF;
+    color:#F9F7F7;
+    transform:translateY(-3px);
+}
+
+#sidebar-container{
+    width:20vw;
+    background:#DBE2EF;
+    padding:20px;
+    overflow-y:auto;
+}
+
+.songOuterDiv{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:#3F72AF;
+    padding:10px;
+    border-radius:15px;
+    margin-bottom:15px;
+    cursor:pointer;
+    color:#F9F7F7;
+    transition:0.3s;
+}
+
+.songOuterDiv:hover{
+    background:#112D4E;
+    transform:translateY(-3px);
+}
+
+.songImg{
+    width:60px;
+    height:60px;
+    border-radius:10px;
+    object-fit:cover;
+}
+
+#sliderIconParent{
+    position:absolute;
+    bottom:30px;
+    right:4vw;
+    background:#112D4E;
+    padding:10px;
+    border-radius:50%;
+    cursor:pointer;
+    color:white;
+}

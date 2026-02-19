@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music Player</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="main-outer-box">
+
+    <main id="main-container">
+
+        <div id="music-container">
+
+            <div id="music-container-img"></div>
+
+            <h2 id="music-container-songName"></h2>
+            <p id="music-container-artistName"></p>
+
+            <div id="rangeIpBtn-container">
+
+                <input id="input-range" type="range" min="0" max="100" value="0">
+
+                <div id="volume-container">
+                    <i id="volume-icon" class="fa-solid fa-volume-high"></i>
+                    <input id="volume-range" type="range" min="0" max="100" value="100">
+                </div>
+
+                <div id="playSong-btn-container">
+
+                    <span id="play-prev">
+                        <i class="fa-solid fa-backward-step"></i>
+                    </span>
+
+                    <span id="play">
+                        <i class="fa-solid fa-play"></i>
+                    </span>
+
+                    <span id="play-next">
+                        <i class="fa-solid fa-forward-step"></i>
+                    </span>
+
+                </div>
+            </div>
+
+        </div>
+
+        <span id="sliderIconParent">
+            <i id="sliderIconChild" class="fa-solid fa-angle-right"></i>
+        </span>
+
+    </main>
+
+    <aside id="sidebar-container">
+        <h2 style="margin-bottom: 20px;">Songs 🎧</h2>
+    </aside>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
