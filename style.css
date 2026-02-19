@@ -104,6 +104,11 @@
     background:#DBE2EF;
     padding:20px;
     overflow-y:auto;
+    transition:0.4s;
+}
+
+#sidebar-container.hidden{
+    margin-left:-20vw;
 }
 
 .songOuterDiv{

@@ -5,6 +5,7 @@ const mainArtistName = document.getElementById("music-container-artistName");
 const inputRange = document.getElementById("input-range");
 const volumeRange = document.getElementById("volume-range");
 const sliderIconParent = document.getElementById("sliderIconParent");
+const sliderIconChild = document.getElementById("sliderIconChild");
 const mainContainer = document.getElementById("main-container");
 
 let isSidebarOpen = true;
@@ -201,12 +202,16 @@ volumeRange.addEventListener("input",(e)=>{
 
 sliderIconParent.addEventListener("click",()=>{
     if(isSidebarOpen){
+        sidebar.classList.add("hidden");
         mainContainer.style.width="100vw";
         sliderIconParent.style.right="4vw";
+        sliderIconChild.className = "fa-solid fa-angle-left";
         isSidebarOpen=false;
     }else{
+        sidebar.classList.remove("hidden");
         mainContainer.style.width="80vw";
         sliderIconParent.style.right="24vw";
+        sliderIconChild.className = "fa-solid fa-angle-right";
         isSidebarOpen=true;
     }
 });
